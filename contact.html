@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Pure Luxe</title>
+  <meta name="description" content="Adresse, horaires, téléphone et formulaire de contact de Pure Luxe, boutique de mode à Pétion-Ville.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-luxe sticky-top" aria-label="Navigation principale">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">
+          <svg class="brand-crown" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 9H5z"/><rect x="5" y="18.5" width="14" height="2"/></svg>
+          <span class="brand-text">PURE <span>LUXE</span></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="lookbook.html">Lookbook</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-luxe">Nous contacter</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== BANNIÈRE DE PAGE ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="script-accent">Parlons style</p>
+        <h1>Contactez-nous</h1>
+        <p>Une question, une envie ou une commande ? Notre équipe vous répond avec plaisir, généralement sous 24 heures.</p>
+      </div>
+    </section>
+
+    <!-- ===== COORDONNÉES ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="contact-card">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <h2>Adresse</h2>
+              <p>12, angle rue Chavannes et rue Grégoire<br>Pétion-Ville, Haïti</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="contact-card">
+              <i class="bi bi-telephone" aria-hidden="true"></i>
+              <h2>Téléphone</h2>
+              <p><a href="tel:+50938755267">+509 3875 5267</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="contact-card">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <h2>Courriel</h2>
+              <p><a href="mailto:contact@pureluxehaiti.com">contact@pureluxehaiti.com</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="contact-card">
+              <i class="bi bi-clock" aria-hidden="true"></i>
+              <h2>Horaires</h2>
+              <p>Lun – Sam : 9h – 18h<br>Dim : fermé</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULAIRE ===== -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="script-accent">Écrivez-nous</p>
+          <h2 class="section-title">Envoyez-nous un message</h2>
+          <div class="gold-rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="form-panel">
+              <form class="needs-validation" name="contact" method="POST" action="/merci.html" data-netlify="true" novalidate>
+                <p class="form-note">Les champs marqués d'un <span class="req">*</span> sont obligatoires.</p>
+
+                <div class="mb-3">
+                  <label for="nom" class="form-label">Nom <span class="req">*</span></label>
+                  <input type="text" class="form-control" id="nom" name="nom" minlength="2" maxlength="60" autocomplete="name" required>
+                  <div class="invalid-feedback">Veuillez entrer votre nom (2 caractères minimum).</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="courriel" class="form-label">Courriel <span class="req">*</span></label>
+                  <input type="email" class="form-control" id="courriel" name="courriel" autocomplete="email" required>
+                  <div class="invalid-feedback">Veuillez entrer une adresse de courriel valide.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="telephone" class="form-label">Téléphone</label>
+                  <input type="tel" class="form-control" id="telephone" name="telephone" autocomplete="tel">
+                </div>
+
+                <div class="mb-3">
+                  <label for="sujet" class="form-label">Sujet <span class="req">*</span></label>
+                  <select class="form-select" id="sujet" name="sujet" required>
+                    <option value="" selected disabled>Choisir un sujet</option>
+                    <option value="question">Question générale</option>
+                    <option value="disponibilite">Commande ou disponibilité</option>
+                    <option value="evenement">Événement ou partenariat</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                  <div class="invalid-feedback">Veuillez choisir un sujet.</div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="message" class="form-label">Message <span class="req">*</span></label>
+                  <textarea class="form-control" id="message" name="message" rows="5" minlength="10" maxlength="1000" required></textarea>
+                  <div class="invalid-feedback">Votre message doit contenir au moins 10 caractères.</div>
+                </div>
+
+                <button type="submit" class="btn btn-luxe">Envoyer le message</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="side-panel">
+              <h3>Horaires d'ouverture</h3>
+              <dl class="hours-list">
+                <div><dt>Lundi – Samedi</dt><dd>9h – 18h</dd></div>
+                <div><dt>Dimanche</dt><dd>Fermé</dd></div>
+              </dl>
+
+              <h3 class="mt-4">Restons en contact</h3>
+              <p>Une réponse rapide ? Écrivez-nous sur WhatsApp, ou suivez nos looks sur Instagram.</p>
+              <div class="d-grid gap-2">
+                <a href="https://wa.me/50942871436" class="btn btn-gold" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                <a href="https://www.instagram.com/pureluxehaiti10/" class="btn btn-outline-light" target="_blank" rel="noopener"><i class="bi bi-instagram" aria-hidden="true"></i> Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PLAN D'ACCÈS ===== -->
+    <section class="section">
+      <div class="container text-center">
+        <p class="script-accent">Venez nous voir</p>
+        <h2 class="section-title">Comment nous trouver</h2>
+        <div class="gold-rule" aria-hidden="true"></div>
+        <p class="lead-muted mb-4">Nous sommes au cœur de Pétion-Ville, facilement accessibles en voiture comme en transport en commun.</p>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-72.2890%2C18.5095%2C-72.2830%2C18.5145&amp;layer=mapnik&amp;marker=18.512%2C-72.286"
+            loading="lazy"
+            title="Plan d'accès à Pure Luxe, Pétion-Ville">
+          </iframe>
+        </div>
+
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=18.512,-72.286" class="link-arrow" target="_blank" rel="noopener">Obtenir l'itinéraire →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 footer-brand">
+          <a class="brand mb-3" href="index.html">
+            <svg class="brand-crown" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 9H5z"/><rect x="5" y="18.5" width="14" height="2"/></svg>
+            <span class="brand-text">PURE <span>LUXE</span></span>
+          </a>
+          <p>Style. Confidence. You.<br>La mode pour toute la famille, et plus encore.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/pureluxehaiti10/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/50942871436" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h3>Navigation</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Horaires</h3>
+          <p>Lun – Sam : 9h – 18h<br>Dim : fermé</p>
+        </div>
+
+        <div class="col-lg-3">
+          <h3>Contact</h3>
+          <p>
+            12, angle rue Chavannes et rue Grégoire, Pétion-Ville<br>
+            <a href="tel:+50938755267">+509 3875 5267</a><br>
+            <a href="mailto:contact@pureluxehaiti.com">contact@pureluxehaiti.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Pure Luxe. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

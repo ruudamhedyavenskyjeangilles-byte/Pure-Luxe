@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure Luxe — Mode, accessoires et perruques</title>
+  <meta name="description" content="Pure Luxe : mode pour toute la famille, accessoires, perruques et cheveux. Style. Confidence. You.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-luxe sticky-top" aria-label="Navigation principale">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">
+          <svg class="brand-crown" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 9H5z"/><rect x="5" y="18.5" width="14" height="2"/></svg>
+          <span class="brand-text">PURE <span>LUXE</span></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="lookbook.html">Lookbook</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-luxe">Nous contacter</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== CARROUSEL PRINCIPAL ===== -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/accueil/hero-01.jpg" class="d-block w-100 hero-img" alt="Femme élégante vêtue d'une tenue lavande">
+          <div class="hero-caption">
+            <div class="container">
+              <div class="hero-text">
+                <p class="script-accent">Where Style Meets Elegance</p>
+                <h1>Style. Confidence. You.</h1>
+                <p>La mode pour toute la famille, et plus encore.</p>
+                <a href="services.html" class="btn btn-luxe">Découvrir nos univers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/accueil/hero-02.jpg" class="d-block w-100 hero-img" alt="Famille en tenues assorties dans des tons violets">
+          <div class="hero-caption">
+            <div class="container">
+              <div class="hero-text">
+                <p class="script-accent">Pour toute la famille</p>
+                <h2>Femme, homme et enfants</h2>
+                <p>Des pièces élégantes pour chaque membre de la famille.</p>
+                <a href="services.html" class="btn btn-luxe">Voir nos collections</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/accueil/hero-03.jpg" class="d-block w-100 hero-img" alt="Perruque et accessoires de mode">
+          <div class="hero-caption">
+            <div class="container">
+              <div class="hero-text">
+                <p class="script-accent">Le détail qui change tout</p>
+                <h2>Perruques, cheveux et accessoires</h2>
+                <p>Complétez votre look avec une touche de confiance.</p>
+                <a href="contact.html" class="btn btn-luxe">Nous écrire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </div>
+
+    <!-- ===== PRÉSENTATION ===== -->
+    <section class="section text-center">
+      <div class="container narrow">
+        <p class="script-accent">Bienvenue chez Pure Luxe</p>
+        <h2 class="section-title">La mode pour toute la famille, et plus encore</h2>
+        <div class="gold-rule" aria-hidden="true"></div>
+        <p class="lead-muted">Qualité, élégance : chez Pure Luxe, chaque pièce est choisie pour vous faire sentir vous-même, avec style et confiance. Vous le méritez.</p>
+      </div>
+    </section>
+
+    <!-- ===== NOS UNIVERS ===== -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="script-accent">Nos univers</p>
+          <h2 class="section-title">Trouvez votre style</h2>
+          <div class="gold-rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <a href="services.html#femme" class="category-tile">
+              <img src="images/accueil/cat-femme.jpg" alt="Sélection de vêtements pour femme">
+              <span class="category-label">
+                <span class="category-name">Mode Femme</span>
+                <span class="category-link">Découvrir <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="services.html#homme" class="category-tile">
+              <img src="images/accueil/cat-homme.jpg" alt="Sélection de vêtements pour homme">
+              <span class="category-label">
+                <span class="category-name">Mode Homme</span>
+                <span class="category-link">Découvrir <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="services.html#enfants" class="category-tile">
+              <img src="images/accueil/cat-enfants.jpg" alt="Sélection de vêtements pour enfants">
+              <span class="category-label">
+                <span class="category-name">Mode Enfants</span>
+                <span class="category-link">Découvrir <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="services.html#accessoires" class="category-tile">
+              <img src="images/accueil/cat-accessoires.jpg" alt="Sacs et accessoires de mode">
+              <span class="category-label">
+                <span class="category-name">Accessoires</span>
+                <span class="category-link">Découvrir <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="services.html#perruques" class="category-tile">
+              <img src="images/accueil/cat-perruques.jpg" alt="Perruques et cheveux">
+              <span class="category-label">
+                <span class="category-name">Perruques &amp; Cheveux</span>
+                <span class="category-link">Découvrir <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOUVEAUTÉS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="script-accent">Fraîchement arrivé</p>
+          <h2 class="section-title">Nos nouveautés</h2>
+          <div class="gold-rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="product-media">
+                <span class="badge badge-luxe">Nouveau</span>
+                <img src="images/accueil/new-01.jpg" class="card-img-top" alt="Robe lavande à volants">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Robe Lavande</h3>
+                <p class="card-text">Coupe fluide et tissu léger.</p>
+                <p class="price">$50</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <a href="https://wa.me/50942871436" class="btn btn-outline-luxe w-100" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Commander</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="product-media">
+                <span class="badge badge-luxe">Nouveau</span>
+                <img src="images/accueil/new-02.jpg" class="card-img-top" alt="Blazer noir pour homme">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Blazer Noir</h3>
+                <p class="card-text">L'allure élégante au quotidien.</p>
+                <p class="price">$65</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <a href="https://wa.me/50942871436" class="btn btn-outline-luxe w-100" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Commander</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="product-media">
+                <span class="badge badge-luxe">Nouveau</span>
+                <img src="images/accueil/new-03.jpg" class="card-img-top" alt="Sac à main violet">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Sac Signature</h3>
+                <p class="card-text">Louis Vuitton.</p>
+                <p class="price">$200</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <a href="https://wa.me/50942871436" class="btn btn-outline-luxe w-100" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Commander</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="product-media">
+                <span class="badge badge-luxe">Nouveau</span>
+                <img src="images/accueil/new-04.jpg" class="card-img-top" alt="Perruque ondulée">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Perruque Wavy</h3>
+                <p class="card-text">Ondulations naturelles, 20 pouces.</p>
+                <p class="price">$150</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <a href="https://wa.me/50942871436" class="btn btn-outline-luxe w-100" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Commander</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POURQUOI PURE LUXE ===== -->
+    <section class="section section-plum text-center">
+      <div class="container">
+        <p class="script-accent text-gold">Pourquoi nous choisir</p>
+        <h2 class="section-title">L'élégance à votre portée</h2>
+        <div class="gold-rule" aria-hidden="true"></div>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-4">
+            <i class="bi bi-gem why-icon" aria-hidden="true"></i>
+            <h3>Qualité</h3>
+            <p>Des pièces sélectionnées avec soin, pensées pour durer.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-stars why-icon" aria-hidden="true"></i>
+            <h3>Élégance</h3>
+            <p>Un style raffiné pour chaque occasion, du quotidien aux grands moments.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-heart why-icon" aria-hidden="true"></i>
+            <h3>Confiance</h3>
+            <p>Un accueil chaleureux et des conseils sincères pour vous sentir à l'aise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BANDEAU D'APPEL ===== -->
+    <section class="section cta text-center">
+      <div class="container narrow">
+        <p class="script-accent">Une envie, une question ?</p>
+        <h2 class="section-title">Écrivez-nous sur WhatsApp</h2>
+        <div class="gold-rule" aria-hidden="true"></div>
+        <p class="lead-muted mb-4">Notre équipe vous répond avec plaisir pour vous conseiller.</p>
+        <a href="https://wa.me/50942871436" class="btn btn-luxe" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Discuter maintenant</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 footer-brand">
+          <a class="brand mb-3" href="index.html">
+            <svg class="brand-crown" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 9H5z"/><rect x="5" y="18.5" width="14" height="2"/></svg>
+            <span class="brand-text">PURE <span>LUXE</span></span>
+          </a>
+          <p>Style. Confidence. You.<br>La mode pour toute la famille, et plus encore.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/pureluxehaiti10/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/50942871436" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h3>Navigation</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Horaires</h3>
+          <p>Lun – Sam : 9h – 18h<br>Dim : fermé</p>
+        </div>
+
+        <div class="col-lg-3">
+          <h3>Contact</h3>
+          <p>
+            12, angle rue Chavannes et rue Grégoire, Pétion-Ville<br>
+            <a href="tel:+50938755267">+509 3875 5267</a><br>
+            <a href="mailto:contact@pureluxehaiti.com">contact@pureluxehaiti.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Pure Luxe. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
