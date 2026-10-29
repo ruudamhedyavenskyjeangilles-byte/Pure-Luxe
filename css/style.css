@@ -487,3 +487,43 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .look img { transition: none; }
 }
+
+/* ---------- Avis clients ---------- */
+.review-card {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid var(--lavender);
+  border-top: 3px solid var(--gold);
+  padding: 2rem 1.75rem;
+}
+.review-stars {
+  color: #A07A1C; /* or plus foncé : contraste 4:1 sur blanc */
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+}
+.review-card blockquote { flex-grow: 1; margin: 0 0 1.25rem; }
+.review-card blockquote p {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--ink);
+}
+.review-card figcaption {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+.review-card figcaption span {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--muted);
+}
